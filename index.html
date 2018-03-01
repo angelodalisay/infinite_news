@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angelo Dalisay</title>
+        <meta content="Description" name="ADAP = Angelo Dalisay Amo Padua">
+        <meta content='1 day' name='revisit-after'>
+        <meta content='width=device-width, initial-scale=1' name='viewport'>
+        <!-- FontAwesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap 3.2.0 -->
+        <link href="/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+        <!-- Animate CSS -->
+        <link rel="shortcut icon" href="/favicon.ico?v=1"/>
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <!-- Styles -->
+        <link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+        <!-- HTML5 fallbacks -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js" type="text/javascript"></script>
+        <script src="js/respond.min.js" type="text/javascript"></script>
+        <![endif]-->
+    </head>
+    <body ng-app="angeloApp">
+
+    <div id='loader'>
+      <div class='bar'></div>
+    </div>
+<div class='container-fluid inloading'>
+    <div class='menu-trigger'>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+    </div>
+    <nav class='alt-menu'>
+        <a href='/' id='logo'>
+          ADAP
+        </a>
+        <div class='centered'>
+            <div class='vcenter'>
+                <ul>
+                    <li>
+                        <a href='/about.html'>ABOUT</a>
+                    </li>
+                    <li>
+                        <a href='/portfolio.html'>PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href='/playground/index.html'>PLAYGROUND <i class="fa fa-user-secret"></i></a>
+                    </li>
+                    <li>
+                        <a href='/contact.html'>CONTACT ME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+      <section ng-controller="theNews">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="news_title"></h3>
+                <ul class="thelist">
+                    <hr>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3" ng-repeat="data in news">
+                        <ul>
+                            <li><a href="#" ng-click="getNews(data.id)">{{data.id}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+<footer>
+    <div class='row'>
+        <div class="col-md-3">
+            <h4>Recent Projects</h4>
+            <ul>
+                <li><a href="http://weatherapp.angelodalisay.com" target="_blank">Weather App</a></li>
+                <li>Infinite Quotes</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class='col-md-3'>
+
+        </div>
+    </div>
+</footer>
+<div id='copy'>
+    <div class='row'>
+        <div class='col-md-5'>
+            Copyright &copy; 2017
+        </div>
+        <div class='col-md-7 social-buttons'>
+            <a class='btn animated fa fa-facebook' href='http://www.facebook.com/djadap' target='_blank'></a>
+            <a class='btn animated fa fa-instagram' href='http://www.instagram.com/dizpinoy' target='_blank'></a>
+            <a class='btn animated fa fa-github' href='http://www.github.com/angelodalisay' target='_blank'></a>
+            <a class='btn animated fa fa-soundcloud' href='http://www.soundcloud.com/adap_music' target='_blank'></a>
+            <a class='btn animated fa fa-linkedin' href='http://www.linkedin.com/in/angelodalisay' target='_blank'></a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- jQuery -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script> -->
+<script src="/js/libs/jquery.min.js" type="text/javascript"></script>
+<!-- Easing -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- Validation -->
+<script src="/js/libs/validation.js" type="text/javascript"></script>
+<!-- Smooth Scrolling -->
+<script src="/js/libs/smoothscroll.js" type="text/javascript"></script>
+<!-- Placholder script -->
+<script src="/js/libs/jquery.placeholder.js" type="text/javascript"></script>
+<!-- Waypoints -->
+<script src="/js/libs/waypoints.min.js" type="text/javascript"></script>
+<!-- Isotope -->
+<script src="/js/libs/isotope.pkgd.min.js" type="text/javascript"></script>
+
+<!-- AngularJS -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+
+<!-- Functions -->
+<script src="/js/functions.js" type="text/javascript"></script>
+<script src="/js/app.js" type="text/javascript"></script>
+<script src="/js/google.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+
